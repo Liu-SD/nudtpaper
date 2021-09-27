@@ -49,28 +49,28 @@
 %6. 简历中的论文和成果用biblatex参考文献方式生成，则使用resumebib选项
 % \documentclass[master,biber,resumebib]{nudtpaper}
 %
-\documentclass[doctor,twoside,biber,resumebib,fz]{nudtpaper}
+\documentclass[master,twoside,biber,resumebib,fz]{nudtpaper}
 \addbibresource[location=local]{ref/refs.bib}
 \usepackage{mynudt}
 
-\classification{TP957}
-\serialno{0123456}
+\classification{TP183}
+\serialno{19023022}
 \confidentiality{公开}
 \UDC{}
-\title{国防科大学位论文\LaTeX{}模板\\
-使用手册}
-\displaytitle{国防科技大学学位论文\LaTeX{}模板}
-\author{张三}
+\title{面向分布式深度强化学习的\\
+嵌入空间分层算法研究}
+\displaytitle{面向分布式深度强化学习的嵌入空间分层算法研究}
+\author{刘斯盾}
 \zhdate{\zhtoday}
-\entitle{How to Use the \LaTeX{} Document Class for NUDT Dissertations}
-\enauthor{ZHANG San}
+\entitle{A Study of Latent Space Hierarchical Algorithm for Distributed Deep Reinforcement Learning}
+\enauthor{LIU Sidun}
 \endate{\entoday}
-\subject{通信与信息工程}
-\ensubject{Information and Communication Engineering}
-\researchfield{自动目标识别与模糊工程}
-\supervisor{李四\quad{}教授}
-\cosupervisor{王五\quad{}副教授} % 没有就空着
-\ensupervisor{Prof. LI Si}
+\subject{计算机科学与技术}
+\ensubject{Computer Science and Technology}
+\researchfield{人工智能}
+\supervisor{窦勇\quad{}研究员}
+\cosupervisor{} % 没有就空着
+\ensupervisor{Prof. DOU Yong}
 \encosupervisor{} % 没有就空着
 \papertype{工学}
 \enpapertype{Engineering}
@@ -93,15 +93,16 @@
 \newif\ifreview\reviewfalse
 
 \midmatter
-\input{data/abstract}
-\input{data/denotation}
+% \input{data/abstract}
+% \input{data/denotation}
 
 %书写正文，可以根据需要增添章节; 正文还包括致谢，参考文献与成果
 \mainmatter
-\input{data/chap01}
-\input{data/chap02}
+\input{data/review}
+% \input{data/chap01}
+% \input{data/chap02}
 
-\input{data/ack}
+% \input{data/ack}
 
 \cleardoublepage
 \phantomsection
